@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+:root {
+    --light-color: #f9f9f9;
+    --dark-color: #333;
+}
+
+body {
+    background: light-dark(#f9f9f9, #333);
+    color: light-dark(#333, #f9f9f9);
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: sans-serif;
+}
