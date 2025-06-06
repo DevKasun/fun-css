@@ -1,3 +1,8 @@
+:root {
+    --light-color: #f9f9f9;
+    --dark-color: #333;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +10,9 @@
     font-size: 16px;
 }
 
-:root {
-    --light-color: #f9f9f9;
-    --dark-color: #333;
-}
-
 body {
+    display: grid;
+    place-items: center;
     background: light-dark(#f9f9f9, #333);
     color: light-dark(#333, #f9f9f9);
 }
