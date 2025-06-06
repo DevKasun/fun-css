@@ -6,7 +6,29 @@
 		<title>CSS light-dark function</title>
 		<link rel="stylesheet" href="main.css" />
 	</head>
-	<body>
-		<h2>light-dark()</h2>
+	<body data-theme="">
+		<main>
+			<div class="container">
+				<h2 class="hero-header">
+					light-dark(
+					<div class="ld-toggle-wrap">
+						<span>☀️</span><span>🌑</span>
+					</div>
+					)
+				</h2>
+			</div>
+		</main>
 	</body>
+
+	<script>
+		const toggle = document.querySelector('.ld-toggle-wrap');
+		const body = document.querySelector('body');
+		toggle.addEventListener('click', () => {
+			if (body.dataset.theme === 'dark') {
+				body.dataset.theme = '';
+			} else {
+				body.dataset.theme = 'dark';
+			}
+		});
+	</script>
 </html>

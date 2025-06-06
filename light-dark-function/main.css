@@ -1,23 +1,45 @@
 :root {
-    --light-color: #f9f9f9;
-    --dark-color: #333;
+	--light-color: #f9f9f9;
+	--dark-color: #333;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
 }
 
 body {
-    display: grid;
-    place-items: center;
-    background: light-dark(#f9f9f9, #333);
-    color: light-dark(#333, #f9f9f9);
+	height: 100dvh;
+	background: light-dark(#f9f9f9, #333);
+	color: light-dark(#333, #f9f9f9);
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
 h2 {
-    font-size: 4rem;
-    font-family: sans-serif;
+	font-size: 4rem;
+	font-family: sans-serif;
+}
+
+.hero-header {
+	display: flex;
+}
+
+.ld-toggle-wrap {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
+	padding: 0 0.5rem;
+	font-size: 2rem;
+}
+
+.ld-toggle-wrap span {
+	cursor: pointer;
 }
