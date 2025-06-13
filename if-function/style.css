@@ -1,0 +1,49 @@
+:root {
+	--bg-dark: black;
+	--bg-light: #f0f0f0;
+	--font-color-dark: black;
+	--font-color-light: #f0f0f0;
+}
+
+* {
+	margin: 0;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: var(--bg-dark);
+}
+
+.card {
+	width: 500px;
+	height: 400px;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(16px) saturate(1.2) brightness(1.1);
+	border-radius: 16px;
+	box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+	border: px solid rgba(255, 255, 255, 0.25);
+	background-image: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.3) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+}
+
+.box {
+	margin-top: 1rem;
+	color: var(--color);
+	background-color: if(style(--color: white): black; else: white);
+}
+
+.dark {
+	--color: black;
+}
+
+.light {
+	--color: white;
+}
